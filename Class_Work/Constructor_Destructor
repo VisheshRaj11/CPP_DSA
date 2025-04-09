@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+//First
+    A(){
+        cout<<"Base Constructor"<<endl;
+    }
+
+//Fourth:
+    ~A(){
+        cout<<"Base Destructor"<<endl;
+    }
+};
+
+class B: public A
+{
+public:
+//Second
+    B(){
+        cout<<"Derieved Constructor"<<endl;
+    }
+
+    ~B(){
+        cout<<"Derieved Destructor"<<endl;
+    }
+};
+
+int main(){
+    B obj1;
+    // return 0;
+}
